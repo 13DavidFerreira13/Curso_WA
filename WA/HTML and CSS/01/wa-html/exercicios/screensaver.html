@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Screensaver</title>
+	<style>
+
+	body {
+			background: #333 url("bg.jpg") no-repeat center center fixed;
+			background-size: cover;
+			margin: 0; padding: 0;
+			overflow: hidden;
+		}
+
+	.cx1 {
+		width: 400px;
+		height: 400px;
+		background-color: rgba(255,255,255,.6);
+		border-radius: 10%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -200px;
+		margin-top: -200px;
+		transform: rotate(-10deg);
+	}
+	.cx2 {
+		width: 600px;
+		height: 600px;
+		background-color: rgba(0,201,237,.4);
+		border-radius: 10%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -300px;
+		margin-top: -300px;
+		transform: rotate(15deg);
+	}
+	.cx3 {
+		width: 1000px;
+		height: 1000px;
+		background-color: rgba(184,75,31,.2);
+		border-radius: 10%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -500px;
+		margin-top: -500px;
+		transform: rotate(32deg);
+	}
+
+	.logo { width: 132px; height: 26px;  position: absolute; top: 50%; left: 50%; margin-left: -66px; margin-top: -13px; }
+
+	</style>
+</head>
+<body>
+	<div class="cx3"></div>
+	<div class="cx2"></div>
+	<div class="cx1"></div>
+	<div class="logo"><img src="logo-flag.png" alt=""></div>
+</body>
+</html>

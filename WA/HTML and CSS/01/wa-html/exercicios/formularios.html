@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LSD</title>
+	<style>
+		body { font: 1.5em/1 georgia; text-align: center; margin: 2em; background-color: #eaeaea; }
+		h1 { font-weight: 100; color: tomato; }
+		input, select, textarea { padding: .5em; font-size: inherit; border-radius: 5px; border: 1px solid #666; }
+		section { padding: 1.5em; border-radius: 5px; text-align: left; background-color: #fff; width: 320px; margin: 0 auto; }
+		label { display: inline-block; width: 100%; margin: 20px 0 10px 0; color: tomato; }
+		[type="submit"] { display: block; margin-top: 20px;  border: none; background-color: tomato; color: #fff; width: 320px; }
+		textarea { width: 300px; }
+		select { width: 322px; }
+	</style>
+</head>
+<body>
+	<h1>Formulário</h1>
+	<section>
+		<form action="formularios2.html" method="get" autocomplete="">
+			<label for="nome_completo" style="margin-top: 0">Primeiro e último nome</label><br>
+			<input type="text" id="nome_completo" required>
+
+			<label for="idade">Idade</label><br>
+			<input type="number" id="idade">
+
+
+			<label for="sexo">Sexo</label><br>
+			<input type="radio" name="sexo" value="masculino" checked required> Masculino<br>
+			<input type="radio" name="sexo" value="feminino"> Feminino<br>
+			<input type="radio" name="sexo" value="outro"> Outro
+
+			<label for="senha">Password</label><br>
+			<input type="password" id="senha" required>
+
+			<label for="acessos">Tipo de acesso</label>
+			<input type="checkbox" name="acessos" value="smartphone">Via smartphone<br>
+			<input type="checkbox" name="acessos" value="tablet">Via tablet<br>
+			<input type="checkbox" name="acessos" value="desktop">Desktop
+
+			<label for="horas_contacto">Hora de contacto</label>
+			<select name="horas_contato" id="horas_contacto">
+				<option value="manha">Manhã</option>
+				<option value="tarde">Tarde</option>
+				<option value="noite">Noite</option>
+			</select>
+
+			<label for="comentario">Comentário</label>
+			<textarea name="comentario" id="comentario"></textarea>
+			
+			<input type="submit" value="Enviar">
+		</form>
+	</section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FLAG</title>
+	<style>
+		body { font: lighter 1.3em/1 georgia; text-align: center; }
+		.tl { text-align: left; }
+		ul { line-height: 1.5; font-size: 1.3em; }
+		li { list-style: none; }
+	</style>
+</head>
+<body>
+
+	<p>HTML Geolocation API</p>
+
+	<p><small><a target="_blank" href="http://www.w3schools.com/HTML/html5_geolocation.asp" target="_blank">Referência</a></small></p>
+	
+	<h2><code>navigator.geolocation.getCurrentPosition()</code></h2>
+
+	<ul>
+		<li>1. Verificar se dispositivo usado é compatível: <code>navigator.geolocation</code></li>
+		<li>2. Invocar método <code>getCurrentPosition()</code></li>
+		<li>3. Receber objecto com os resultados</li>
+		<li>4. Usar dados do objecto: <code>coords.latitude, coords.longitude</code></li>
+	</ul>
+
+	<p><a target="_blank" href="geolocation_02.html">Exemplo</a></p>
+
+	<script>
+		// var element = document.querySelector("h1");
+		var lat, long, obj;
+
+		if (navigator.geolocation){
+
+			navigator.geolocation.getCurrentPosition(showPosition);
+			console.log("ok");
+		} else {
+
+			console.log("no geolocation");
+		}
+
+		function showPosition(obj) {
+			console.log(obj);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body { background-color: tomato; line-height: 1; font-size: 100%; }
+        * { margin: 0; padding: 0; box-sizing: border-box; border: 0; }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            vertical-align: baseline;
+        }
+        a { text-decoration: none; }
+        img { vertical-align: bottom; border-style: none; }
+        h1 {
+            color: #161d28;
+            font-size: 30px;
+            font-weight: 400;
+        }
+        h2 {
+            color: #161d28;
+            font-weight: 100;
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            line-height: 1.25;
+            padding: 30px 40px 9px 30px;
+            text-align: left;
+        }
+        p {
+            color: #676d76;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            padding: 0 30px 19px 30px;
+        }
+        a {
+            font-weight: 400;
+            text-decoration: none;
+            color: #796eff;
+            padding: 0 30px 10px 30px;
+        }
+
+        .newsletter__container {
+            width: 630px;
+            padding: 15px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+        .newsletter {
+            border-collapse: collapse;
+            border-spacing: 0;
+            box-sizing: border-box;
+            font-family: helvetica,arial,sans-serif;
+            text-align: center;
+        }
+        .newsletter__section { text-align: left; }
+        .newsletter__section td { width: 300px; }
+        .newsletter__logo { width: 160px;  padding: 40px 0; }
+        .newsletter__img { width: 285px; height: 285px; }
+        .newsletter__link--browser { font-size: 11px; text-decoration: underline; color: #aaa; }
+        .newsletter__text--header { line-height: 1.38; padding: 33px; }
+        .newsletter__link--cta { border-radius: 3px; background: #796EFF; color: #FFFFFF; padding: 14px 25px; display: inline-block;  margin-bottom: 45px; }
+        .text-right { text-align: right; }
+        .padding-left { padding-left: 15px; }
+        .footer {
+            padding-top: 60px;
+            color: #A1A4AA;
+            font-family: Helvetica, Arial, sans-serif !important;
+            font-weight: normal;
+            text-align: center;
+            line-height: 16px;
+            font-size: 11px;
+            position: relative;
+            box-sizing: border-box;
+            margin: 0 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="newsletter__container">
+
+        <table class="newsletter">
+            <!-- header -->
+            <tr>
+                <td colspan="2" class="text-right"><a class="newsletter__link--browser" href="https://asana.com/">View in browser</a></td>
+            </tr>
+            <tr>
+                <td colspan="2"><img src="img/asana.png"  class="newsletter__logo" alt="Asana" title="Asana"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h1>Start 2019 off right</h1>
+                    <p class="newsletter__text--header">Make this the year you (and your team) achieve your biggest goals. Plan and track your work in Asana—and get more done these 4 ways.</p>
+                    <a href="https://asana.com/" class="newsletter__link--cta">Start Planning</a>
+                </td>
+            </tr>
+            <!-- header end -->
+
+            <!-- section row -->
+            <tr class="newsletter__section">
+                <td>
+                    <img src="img/asana-plans.gif" class="newsletter__img" alt="Asana campaign plans" title="Asana campaign plans">
+                    <h2>Nail your plans</h2>
+                    <p>From launches to campaigns, use templates to easily set up project plans so you can get right to work.</p>
+                    <a href="https://asana.com/">Try a template ›</a>
+                </td>
+                <td class="padding-left">
+                    <img src="img/asana-meetings.png" class="newsletter__img" alt="Asana meetings" title="Asana meetings">
+                    <h2>Run fewer meetings</h2>
+                    <p>Instead of scheduling another meeting, share status updates in Asana to keep everyone on the same page.</p>
+                    <a href="https://asana.com/">See how ›</a>
+                </td>
+            </tr>
+            <!-- section row end -->
+
+            <!-- section row -->
+            <tr class="newsletter__section">
+                <td>
+                    <img src="img/asana-track.png" class="newsletter__img" alt="Asana stay on track" title="Asana stay on track">
+                    <h2>Stay on track</h2>
+                    <p>Monitor progress across all your projects in real time, so you always know what’s on track and what needs your
+                        attention.</p>
+                        <a href="https://asana.com/">See Portfolios ›</a>
+                    </td>
+                    <td class="padding-left">
+                        <img src="img/asana-deadlines.gif" class="newsletter__img" alt="Asana keep deadlines" title="Asana keep deadlines">
+                        <h2>Hit deadlines</h2>
+                        <p>Create project Timelines to see how tasks and deadlines connect, and stay on schedule even when plans change.</p>
+                        <a href="https://asana.com/">Learn how ›</a>
+                    </td>
+                </tr>
+                <!-- section row end -->
+
+                <!-- footer -->
+                <tr>
+                    <td colspan="2"class="footer">
+                        <p>You are signed up for this email as mail@mail.com. | <a href="https://asana.com/">Manage email preferences</a>.</p>
+                        <p>1550 Bryant Street, San Francisco, CA 94103</p>
+                        <p>
+                            <a href="https://pt-pt.facebook.com/asana/"><img src="img/asana-facebook.png" alt="Connect with facebook"></a>
+                            <a href="https://twitter.com/asana"><img src="img/asana-twitter.png" alt="Follow our twitter"></a>
+                        </p>
+                    </td>
+                </tr>
+                <!-- footer end -->
+            </table>
+        </div>
+    </body>
+
+    </html>

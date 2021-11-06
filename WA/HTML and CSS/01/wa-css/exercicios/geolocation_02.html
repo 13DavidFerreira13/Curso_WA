@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FLAG</title>
+	<style>
+		body { font: lighter 1.3em/1 georgia; text-align: center; }
+		h1 { font-weight: lighter; line-height: 2; }
+		.tl { text-align: left; }
+		ul { line-height: 1.5; font-size: 1.3em; }
+		li { list-style: none; }
+		#map {
+			width: 100%;
+			height: 400px;
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+
+	<p>HTML Geolocation API</p>
+
+	<h2><code>navigator.geolocation.getCurrentPosition()</code></h2>
+	
+	<h1>...</h1>
+
+	<div id="map"></div>
+	
+	<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+	<script>
+		var lat;
+		var long;
+		var map;
+		var element = document.querySelector("h1");
+
+		function initMap() {
+
+			if (navigator.geolocation){
+
+				navigator.geolocation.getCurrentPosition(showPosition);
+				console.log("geolocation ok");
+			} else {
+
+				console.log("geolocation error");
+			}
+		}
+
+		function showPosition(obj) {
+
+			// log obj
+			console.log(obj);
+
+			// get coords from returned objct
+			lat = obj.coords.latitude;
+			long = obj.coords.longitude;
+
+			// output do dom
+			element.innerHTML = "latitude: " + lat + "<br>longitude: " + long;
+
+			buildMap();
+		}
+
+		// init google map
+		function buildMap() {
+
+			// adicionar mapa
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: lat, lng: long},
+				zoom: 18
+			});
+
+			// adicionar marcador
+			var marker = new google.maps.Marker({
+				position:{lat: lat, lng: long},
+				map: map,
+				title: 'Hello World!'
+			});
+		}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDscrRKxwLzq8Tcc5Vc5pCdSq1D17FAPqM&callback=initMap" async defer></script>
+</body>
+</html>

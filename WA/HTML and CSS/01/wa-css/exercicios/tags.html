@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tags</title>
+	<style>
+		body { font: 1.2em/1 georgia; margin: 2em; }
+		section { margin: 0 0 4em 0; max-width: 800px; }
+		.title { color: tomato; }
+		hr { border-top: 1px dashed #8c8b8b; }
+		p { line-height: 1.3; }
+		.reset { border-top: 1px solid #000; }
+		span { font-weight: bold; color: tomato; }
+		span:before { content: "<"; }
+		span:after { content: ">"; }
+		a { margin-right: 1em; }
+		.div { background-color: #eaeaea; box-sizing: border-box; padding: 1em; }
+	</style>
+</head>
+<body>
+	<section>
+		<p class="title">Títulos (headings) <span>h1</span> a <span>h6</span></p>
+		<hr>
+		<h1>Título h1 (maior importância)</h1>
+		<h2>Título h2</h2>
+		<h3>Título h3</h3>
+		<h4>Título h4</h4>
+		<h5>Título h5</h5>
+		<h6>Título h6 (menor importância)</h6>
+	</section>
+
+	<section>
+		<p class="title">Parágrafos <span>p</span></p>
+		<hr>
+		<p>Fundada em 2009, a LSD - Lisbon School of Design aplica técnicas de ensino inovadoras, criativas e desafiantes, simulando um ambiente real de trabalho em atelier/agência.</p>
+		<p>O seu modelo de ensino assenta no equilíbrio entre o ensino teórico/conceptual e o ensino das ferramentas de design práticas, proporcionando, ao aluno, um vasto conjunto de experiências que o aproximam do ambiente real do “mercado de trabalho” e de um contexto profissional.</p>
+		<p>Os alunos da LSD são criativos; são exigentes; irreverentes; têm vontade de aprender; anseiam pelo futuro. A preocupação da LSD é ajudá-los a encontrar e a definir esse futuro, funcionando como uma “ante-câmara” do mercado de trabalho, diferenciando-os.</p>
+		<p>Na LSD potencia-se, todos os dias, a individualidade de cada um dos seus alunos, valorizando-a através de um ambiente positivo e inspirador, e de uma confrontação permanente com os seus próprios limites.</p>
+	</section>
+
+	<section>
+		<p class="title">Quebra de linha (line break) <span>br</span></p>
+		<hr>
+		<p>Fundada em 2009, a LSD - Lisbon School of Design aplica técnicas de ensino inovadoras, criativas e desafiantes, simulando um ambiente real de trabalho em atelier/agência.<br>O seu modelo de ensino assenta no equilíbrio entre o ensino teórico/conceptual e o ensino das ferramentas de design práticas, proporcionando, ao aluno, um vasto conjunto de experiências que o aproximam do ambiente real do “mercado de trabalho” e de um contexto profissional.<br>Os alunos da LSD são criativos; são exigentes; irreverentes; têm vontade de aprender; anseiam pelo futuro. A preocupação da LSD é ajudá-los a encontrar e a definir esse futuro, funcionando como uma “ante-câmara” do mercado de trabalho, diferenciando-os.<br>
+			Na LSD potencia-se, todos os dias, a individualidade de cada um dos seus alunos, valorizando-a através de um ambiente positivo e inspirador, e de uma confrontação permanente com os seus próprios limites.</p>
+		</section>
+
+		<section>
+			<p class="title">Régua (horiontal rule) <span>hr</span></p>
+			<hr>
+			<p>O curso de Branding explora a criação de marcas na sua dimensão estratégica e intangível, a comunicação com a indústria e a gestão de projeto, bem como a redação de conteúdos, o desenho e a implementação de identidade.</p>
+			<hr class="reset">
+			<p>O curso de Design de exteriores pretende preparar profissionais prontos para os mais diversos aspetos que concorrem para o sucesso no desenho dos espaços verdes urbanos de estatuto público ou privado.</p>
+		</section>
+
+		<section>
+			<p class="title">Hiperligações (âncoras, links) &lt;a href="http://www.lsd.pt"&gt;Lisbon School of Design<span>/a</span></p>
+			<hr>
+			<a href="http://www.lsd.pt/m_cursos.php?mid=1">Cursos</a>
+			<a href="http://www.lsd.pt/m_profs.php?mid=4">Os professores</a>
+			<a href="http://www.lsd.pt/m_blog.php?mid=6">Blog</a>
+		</section>
+
+		<section>
+			<p class="title">Imagens &lt;img src="foto.jpg"&gt;</p>
+			<hr>
+			<img src="bg.jpg" alt="background" width="400px">
+		</section>
+
+		<section>
+			<p class="title">Div <span>div</span></p>
+			<hr>
+			<div class="div">
+				<p>Uma div com texto e uma imagem</p>
+				<img src="bg.jpg" alt="background" width="200px">
+			</div>
+		</section>
+
+		<section>
+			<p class="title">Listas <span>li</span></p>
+			<hr>
+			<p>Não ordenadas (unordered)</p>
+			<ul>
+				<li>Cursos</li>
+				<li>Professores</li>
+				<li>Blog</li>
+			</ul>
+			<p>Ordenadas (ordered)</p>
+			<ol>
+				<li>Cursos</li>
+				<li>Professores</li>
+				<li>Blog</li>
+			</ol>
+		</section>
+
+
+	</body>
+	</html>

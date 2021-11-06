@@ -1,0 +1,38 @@
+﻿2019 ASANA NEWSLETTER
+
+1. HEADER
+
+Link: View in browser (https://asana.com/)
+
+Imagem: asana.png
+Título: Start 2019 off right
+Texto: Make this the year you (and your team) achieve your biggest goals. Plan and track your work in Asana—and get more done these 4 ways.
+CTA: Start Planning (https://asana.com/)
+
+2. MAIN
+
+Imagem: asana-plans.gif
+Título: Nail your plans
+Texto: From launches to campaigns, use templates to easily set up project plans so you can get right to work.
+CTA: Try a template ›
+
+Imagem: asana-meetings.png
+Título: Run fewer meetings
+Texto: Instead of scheduling another meeting, share status updates in Asana to keep everyone on the same page.
+CTA: See how ›
+
+Imagem: asana-track.png
+Título: Stay on track
+Texto: Monitor progress across all your projects in real time, so you always know what’s on track and what needs your attention.
+CTA: See Portfolios ›
+
+Imagem: asana-dealines.gif
+Hit deadlines
+Create project Timelines to see how tasks and deadlines connect, and stay on schedule even when plans change.
+Learn how ›
+
+3. FOOTER
+
+You are signed up for this email as mail@mail.com. Manage email preferences (https://asana.com/).
+1550 Bryant Street, San Francisco, CA 94103
+Icon link Facebook asana-facebook.png (https://pt-pt.facebook.com/asana/) + icon link Twitter asana-twitter.png (https://twitter.com/asana)

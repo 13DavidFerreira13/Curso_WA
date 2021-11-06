@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video e Audio</title>
+</head>
+<body>
+
+    <h1>Video</h1>
+    <video src="media/video.mp4"></video>
+<br>
+    <button>Play</button>
+    <button>Pause</button>
+    <button>Mute</button>
+
+    <h2>Audio 
+        <br>
+        <audio src="media/audio.mp3" controls></audio>
+    </h2>
+
+<script>
+    const video = document.querySelector('video');
+    const button = document.querySelector('button');
+    button.addEventListener('click', event => {
+        video.play();
+    })
+</script>
+
+</body>
+</html>
